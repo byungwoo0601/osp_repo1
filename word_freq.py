@@ -27,7 +27,7 @@ for i in file6:
 #print(file6)
 #print(counts)
 
-d1 = sorted(counts.items())
+d1 = sorted(counts.items(), key = lambda item: item[1] ,reverse=True)
 
 print(d1)
 
