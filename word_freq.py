@@ -29,7 +29,9 @@ for i in file6:
 
 d1 = sorted(counts.items(), key = lambda item: item[1] ,reverse=True)
 
-print(d1)
+#print(d1)
+
+print(d1[:int(b)])
 
 
 f.close()
