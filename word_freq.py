@@ -27,11 +27,17 @@ for i in file6:
 #print(file6)
 #print(counts)
 
-d1 = sorted(counts.items(), key = lambda item: item[1] ,reverse=True)
+word = sorted(counts.items(), key = lambda item: item[1] ,reverse=True)
 
-#print(d1)
+#print(word)
 
-print(d1[:int(b)])
+#print(word[:int(b)])
 
+for key, value  in word[:int(b)]:
+	print("{0:15}".format(key), value)
+
+
+
+	
 
 f.close()
