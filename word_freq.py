@@ -10,5 +10,12 @@ file = f.read()
 file1 = file.replace("?","")
 file2 = file1.replace("!","")
 file3 = file2.replace(".","")
-print(file3)
+#print(file3)
+
+file4 = file3.split()
+print(file4)
+
+
+
+
 f.close()
