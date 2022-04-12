@@ -10,19 +10,26 @@ file = f.read()
 file1 = file.replace("?","")
 file2 = file1.replace("!","")
 file3 = file2.replace(".","")
-#print(file3)
+file4 = file3.replace(",","")
+file5 = file4.replace("-","")
+#print(file5)
 
-file4 = file3.split()
+file6 = file5.split()
 #print(file4)
 
 counts = dict()
-for i in file4:
+for i in file6:
 	if i not in counts:
 		counts[i] = 1
 	else:
 		counts[i] += 1
 
-#print(file4)
-print(counts)
+#print(file6)
+#print(counts)
+
+d1 = sorted(counts.items())
+
+print(d1)
+
 
 f.close()
