@@ -13,9 +13,16 @@ file3 = file2.replace(".","")
 #print(file3)
 
 file4 = file3.split()
-print(file4)
+#print(file4)
 
+counts = dict()
+for i in file4:
+	if i not in counts:
+		counts[i] = 1
+	else:
+		counts[i] += 1
 
-
+#print(file4)
+print(counts)
 
 f.close()
